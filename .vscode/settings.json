@@ -1,0 +1,15 @@
+{
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "clangd.arguments": [
+    "--compile-commands-dir=${workspaceFolder}/build_release",
+    "--background-index",
+    "--clang-tidy",
+    "--completion-style=detailed",
+    "--header-insertion=never",
+    "--pch-storage=memory",
+    "--cross-file-rename",
+    "--fallback-style=none",
+    "--suggest-missing-includes"
+  ],
+  "editor.semanticHighlighting.enabled": true
+}
