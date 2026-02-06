@@ -3,3 +3,4 @@ PointerAlignment : Left
 AlwaysBreakTemplateDeclarations: Yes
 CompactNamespaces: true
 ColumnLimit: 120
+Standard: Cpp23

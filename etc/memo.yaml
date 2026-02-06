@@ -1,0 +1,21 @@
+include:
+  - memo2.yaml
+
+git:
+  log:
+    options:
+      - option: since
+        short: f
+        type: string
+    tree:
+      executor:
+        type: shell
+        command: git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all
+
+cpp:
+  ast:
+    dump:
+      executor:
+        type: plugin
+        library: /home/you/.memo/plugins/libcpp_tools.so
+        symbol: meo_cpp_ast_dump
